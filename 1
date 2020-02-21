@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contatore pulsante</title>
+<script type="text/javascript">
+var s=0;
+function contatore() {
+	s=s+1;
+	document.getElementById('conteggi').innerHTML = s;
+}
+</script>
+</head>
+
+<body>
+<form name="form1">
+<p id="conteggi">0</p>
+<input type="button" name="bottone" value="Conta" onClick="javascript:contatore();">
+</form>
+</body>
+</html>
